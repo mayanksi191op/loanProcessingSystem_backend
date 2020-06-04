@@ -40,7 +40,6 @@ public class User implements Serializable{
 	private String fullname;
 	@Column
 	@NotNull
-	@JsonIgnore
 	@Pattern(regexp = "(?=.*[a-z])(?=.*\\d)(?=.*[A-Z])(?=.*[@#$%!]).{8,}", message = "password must contain at least one number, one uppercase, one lowercase, one special character and atleast 8 or more characters.")
 	private String password;
 	@Column
